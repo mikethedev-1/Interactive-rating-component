@@ -1,0 +1,152 @@
+/*Setting global style*/
+*
+{box-sizing: border-box;
+ margin: 0px;
+ padding: 0px;
+}
+
+/*Setting variable values*/
+:root 
+{--orange: hsl(25, 97%, 53%);
+ --White: hsl(0, 0%, 100%);
+ --LightGrey: hsl(217, 12%, 63%);
+ --MediumGrey: hsl(216, 12%, 54%);
+ --DarkBlue: hsl(213, 19%, 18%);
+ --VeryDarkBlue: hsl(216, 12%, 8%);
+ --fz: 15px;
+ --fw1: 400;
+ --fw2: 700;
+}
+
+/*Styling first section*/
+body
+{background-color: var(--VeryDarkBlue);
+ font-family: overpass, sans-serif;
+ display: flex;
+ justify-content: space-around;
+ flex-direction: row;
+ align-items: center;
+}
+
+.img-background
+{width: 40px;
+ height: 40px;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ border-radius: 50%;
+ background-color: var(--VeryDarkBlue);
+}
+
+.sec-con
+{background-color: var(--DarkBlue);
+ width: 25%;
+ padding: 30px;
+ border: none;
+ border-radius: 15px;
+ margin-top: 10%;
+}
+
+.text-container
+{text-align: left;
+ margin-top: 30px;
+}
+
+.text-head
+{color: white;
+ font-weight: var(--fw2);
+ font-size: 26px;
+ text-align: center;
+}
+
+.text-content
+{color: var(--MediumGrey);
+ margin-top: 10px;
+ font-size: 14px;
+ font-weight: var(--fw1);
+ line-height: 20px;
+}
+
+.list
+{display: flex;
+ flex-direction: row;
+ justify-content: space-between;
+ align-items: center;
+ list-style-type: none;
+ text-decoration: none;
+ text-align: center;
+ color: var(--MediumGrey);
+ font-weight: var(--fw1);
+ margin-top: 30px;
+}
+
+li 
+{cursor: pointer;
+}
+
+.co:hover 
+{background-color: var(--orange);
+ color: var(--White);
+}
+
+.co 
+{cursor: pointer;}
+
+.button
+{width: 100%;
+ padding: 10px;
+ margin-top: 35px;
+ color: var(--White);
+ background-color: var(--orange);
+ border: 2px solid var(--orange);
+ border-radius: 20px;
+ cursor: pointer;
+}
+
+.button:hover
+{background-color: white;
+ color: var(--orange);
+}
+
+.text
+{color: var(--orange);
+    background-color: var(--VeryDarkBlue);
+    padding: 5px 10px;
+    text-align: center;
+    width: fit-content;
+    display: flex;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 20px;
+    margin-top: 15px;
+    font-size: 14px;
+    font-weight: var(--fw1);
+    line-height: 20px;
+}
+
+.img-co
+{width: 100%;
+ display: flex;
+ justify-content: center;
+}
+
+
+
+.s-text-con
+{margin-top: 18px;
+ text-align: center;
+}
+
+.sub-div {display: none;}
+
+@media screen and (max-width: 500px){
+.sec-con
+{background-color: var(--DarkBlue);
+ width: 90%;
+ padding: 30px;
+ border: none;
+ border-radius: 15px;
+ margin-top: 5%;
+}
+}
